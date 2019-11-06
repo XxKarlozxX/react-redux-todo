@@ -4,6 +4,11 @@ import { connect } from "react-redux";
 import { setFilter } from "../redux/actions";
 import { VISIBILITY_FILTERS } from "../constants";
 
+// Por cada constante (o estado/filtro en la tarea),
+// agrega una etiqueta span con su info correspondiente.
+// Nota:
+// map recibe una funcion con un parametro cuyo valor
+// corresponde a cada item del array que esta iterando.
 const VisibilityFilters = ({ activeFilter, setFilter }) => {
   return (
     <div className="visibility-filters">
